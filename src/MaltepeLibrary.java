@@ -24,7 +24,7 @@ public class MaltepeLibrary {
     public void lendBook(Person person, Books book){
         if (books.contains(book))
         {
-            person.borrowBook(book);
+            person.returnBook(book);
             removeBook(book);
             System.out.println(person.getName()+" borrowed the book named "+book.getBookname());
             System.out.println(" ");
@@ -35,10 +35,10 @@ public class MaltepeLibrary {
             System.out.println(" ");
         }
     }
-    public void borrowBook(Person person, Books book){
+    public void returnBook(Person person, Books book){
         person.lendBook(book);
         addBook(book);
-        System.out.println(person.getName()+" borrowed the book named "+book.getBookname());
+        System.out.println(person.getName()+" returned the book named "+book.getBookname()+"to the library.");
         System.out.println(" ");
     }
 }

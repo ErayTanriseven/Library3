@@ -10,7 +10,7 @@ public class Professor extends Person {
     }
 
 
-    public void Borrow(long bookisbn){
+    public void _return(long bookisbn){
 
     }
 

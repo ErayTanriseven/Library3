@@ -52,13 +52,13 @@ public class Person {
         System.out.println(personType+" ID : "+ id + ", " +personType+" Name : "+ name);
     }
 
-    public void borrowBook (Books bbook){
+    public void returnBook (Books bbook){
         books.add(bbook);
     }
 
     public void ShowHaveBooks(){
         System.out.println("");
-        System.out.println(name+" has the book named   ");
+        System.out.println(name+" has the book(s) named   ");
         for (int i = 0; i< books.size();i++)
         {
             System.out.println(books.get(i).getBookname());

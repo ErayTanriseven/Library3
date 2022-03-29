@@ -27,7 +27,7 @@ public class Main {
 
         MAULib.lendBook(student,book1);
 
-        MAULib.borrowBook(prof,book1);
+        MAULib.returnBook(prof,book1);
         MAULib.lendBook(prof,book3);
 
         MAULib.lendBook(student,book1);
