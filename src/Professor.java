@@ -3,8 +3,8 @@ package tr.edu.maltepe.oop;
 public class Professor extends Person {
 
 
-    public Professor(long id, String name, int year) {
-        super(id, name, year);
+    public Professor(String name, int year) {
+        super(name, year);
 
         this.setPersonType("Professor");
     }

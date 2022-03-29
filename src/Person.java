@@ -4,25 +4,15 @@ import java.util.*;
 
 public class Person {
     private Vector<Books> books = new Vector<Books>();
-    private long id;
     private String name;
     private int age;
     private String personType ;
 
-    public Person(long id, String name, int age){
-        this.id = id;
+    public Person(String name, int age){
         this.name= name;
         this.age=age;
     }
 
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -49,7 +39,7 @@ public class Person {
 
     public void  ShowInfo()
     {   System.out.println(" ");
-        System.out.println(personType+" ID : "+ id + ", " +personType+" Name : "+ name);
+        System.out.println(personType+" Name : "+ name);
     }
 
     public void returnBook (Books bbook){

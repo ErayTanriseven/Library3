@@ -5,8 +5,8 @@ public class Students extends Person {
 
     private Professor parentProf;
 
-    public Students(long id, String name, int year, Professor parentProf) {
-        super(id, name, year);
+    public Students(String name, int year, Professor parentProf) {
+        super(name, year);
         this.parentProf = parentProf;
         this.setPersonType("Student");
 
