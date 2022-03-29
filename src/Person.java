@@ -5,12 +5,10 @@ import java.util.*;
 public class Person {
     private Vector<Books> books = new Vector<Books>();
     private String name;
-    private int age;
     private String personType ;
 
-    public Person(String name, int age){
+    public Person(String name){
         this.name= name;
-        this.age=age;
     }
 
 
@@ -20,14 +18,6 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     protected String getPersonType() {

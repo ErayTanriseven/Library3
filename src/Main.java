@@ -5,8 +5,8 @@ public class Main {
         Books book1, book2, book3;
         MaltepeLibrary MAULib = new MaltepeLibrary();
 
-        Professor prof = new Professor("Ensar Gül ",2022);
-        Students student = new Students("Eray Tanrıseven", 2022,prof);
+        Professor prof = new Professor("Ensar Gül ");
+        Students student = new Students("Eray Tanrıseven",prof);
 
 
 
