@@ -35,6 +35,16 @@ public class Main {
         prof.ShowHaveBooks();
         student.ShowHaveBooks();
 
+        student.student_arriving();
+
+        student.swim();
+        student.play_football();
+
+        prof.professor_arriving();
+
+        prof.swim();
+        prof.play_football();
+
     }
 
 }

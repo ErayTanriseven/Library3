@@ -1,6 +1,6 @@
 package tr.edu.maltepe.oop;
 
-public class Students extends Person {
+public class Students extends Person implements do_sport{
 
 
     private Professor parentProf;
@@ -27,4 +27,16 @@ public class Students extends Person {
     public void setParentProf(Professor parentProf) {
         this.parentProf = parentProf;
     }
+    public void student_arriving() {
+        System.out.println("Student arrived at Sport Center which swimming pool and football field located at.");
+    }
+
+    public void swim() {
+        System.out.println("Student is swimming.");
+    }
+    public void play_football() {
+        System.out.println("Student is playing football.");
+    }
+
+
 }
